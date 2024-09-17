@@ -3,3 +3,14 @@
 margin:0px;
 padding:0px;
 }
+
+.nav_icon
+{
+width:50px;
+}
+
+button a 
+{
+text-decoration:none;
+color:black;
+}
