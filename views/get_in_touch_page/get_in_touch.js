@@ -3,6 +3,8 @@ const cookiesString = document.cookie;
 const cookiesArray = cookiesString.split(";")
 
 console.log(10)
+console.log(cookiesString)
+console.log(cookiesArray)
 
 const cookieSearch = (cookieName) => {
 let nameLength = cookieName.length
