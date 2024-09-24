@@ -21,7 +21,7 @@ let foundCookie = cookieSearch("contactType");
 
 const changeFormToBusiness = () => {
 let topicInput = document.getElementsByClassName("topic_input")[0]
-topicInput.nodeValue = "Getting a Business Website"
+topicInput.value = "Getting a Business Website"
 }
 
 if(foundCookie == "BusinessSite")
