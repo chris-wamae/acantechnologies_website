@@ -10,7 +10,7 @@ const cookieSearch = (cookieName) => {
 
   for (let x = 0; x < cookiesArray.length && !foundCookie; x++) {
     if (cookiesArray[x].substring(0, nameLength) == cookieName) {
-      result = cookie.substring(nameLength + 1);
+      result = cookiesArray[x].substring(nameLength + 1);
     foundCookie = true;
     } 
   }
