@@ -19,12 +19,37 @@ const cookieSearch = (cookieName) => {
 
 let foundCookie = cookieSearch("contactType");
 
-const changeFormToBusiness = () => {
-let topicInput = document.getElementsByClassName("topic_input")[0]
-topicInput.value = "Getting a Business Website"
+const changeFormDefaultValues = () => {
+
+    let titleInput = document.getElementsByClassName("title_input")[0]
+
+    let topicInput = document.getElementsByClassName("topic_input")[0]
+
+    switch(foundCookie)
+    {
+    case "BusinessSite" : 
+    topicInput.value = "Business Website"
+    titleInput.value = "More information on getting the process of getting a business website developed by Acan"
+    break;
+
+    case "CommerceSite" : 
+    topicInput.value = "E-commerce Website"
+    titleInput.value = "Additional information on getting an E-commerce website developed for my business by Acan"
+    break;
+
+    case "WebAPI" : 
+    topicInput.value = "Web API"
+    titleInput.value = "More information on the Web API development offered by Acan"
+    break;
+
+    case "WebApp" : 
+    topicInput.value = "Business Website"
+    titleInput.value = "Whats the process of getting my Web Application developed through Acan"
+    break;
+
+    default:
+    console.log("No form changes made")
+    }
 }
 
-if(foundCookie == "BusinessSite")
-{
-changeFormToBusiness()
-}
+changeFormDefaultValues()
