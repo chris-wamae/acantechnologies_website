@@ -43,7 +43,7 @@ const changeFormDefaultValues = () => {
     break;
 
     case "WebApp" : 
-    topicInput.value = "Business Website"
+    topicInput.value = "Web Application"
     titleInput.value = "Whats the process of getting my Web Application developed through Acan"
     break;
 
