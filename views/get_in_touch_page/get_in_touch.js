@@ -6,11 +6,13 @@ const cookieSearch = (cookieName) => {
   let nameLength = cookieName.length;
 
   let result = "";
+  let foundCookie = false;
 
-  for (let x = 0; x < cookiesArray.length; x++) {
-    if (cookie.substring(0, nameLength) == cookieName) {
+  for (let x = 0; x < cookiesArray.length && !foundCookie; x++) {
+    if (cookiesArray[x].substring(0, nameLength) == cookieName) {
       result = cookie.substring(nameLength + 1);
-    }
+    foundCookie = true;
+    } 
   }
   return result;
 };
