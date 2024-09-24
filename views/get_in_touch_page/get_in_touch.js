@@ -19,4 +19,12 @@ const cookieSearch = (cookieName) => {
 
 let foundCookie = cookieSearch("contactType");
 
-console.log(foundCookie);
+const changeFormToBusiness = () => {
+let topicInput = document.getElementsByClassName("topic_input")[0]
+topicInput.nodeValue = "Getting a Business Website"
+}
+
+if(foundCookie == "BusinessSite")
+{
+changeFormToBusiness()
+}
