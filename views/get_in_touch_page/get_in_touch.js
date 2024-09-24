@@ -12,7 +12,10 @@ console.log(nameLength)
 cookiesArray.filter((cookie) => {
 console.log(cookie)
 console.log(cookieName)
-return cookie.substring(0,nameLength) == cookieName})
+if(cookie.substring(0,nameLength) == cookieName)
+{
+return cookie.substring(nameLength)
+}})
 }
 
 
