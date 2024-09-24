@@ -15,10 +15,12 @@ console.log(cookieName)
 console.log(cookie.substring(0,nameLength))
 console.log(cookie.substring(0,nameLength) == cookieName)
 console.log(cookie.substring(nameLength))
+let result = ""
 if(cookie.substring(0,nameLength) == cookieName)
 {
-return cookie.substring(nameLength)
+result = cookie.substring(nameLength + 1)
 }})
+return result
 }
 
 
