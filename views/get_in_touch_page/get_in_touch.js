@@ -14,3 +14,4 @@ return cookie.substring(0,nameLength) == cookieName})
 }
 
 
+cookieSearch("contactType");
