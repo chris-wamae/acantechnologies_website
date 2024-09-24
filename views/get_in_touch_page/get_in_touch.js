@@ -14,6 +14,7 @@ console.log(cookie)
 console.log(cookieName)
 console.log(cookie.substring(0,nameLength))
 console.log(cookie.substring(0,nameLength) == cookieName)
+console.log(cookie.substring(nameLength))
 if(cookie.substring(0,nameLength) == cookieName)
 {
 return cookie.substring(nameLength)
