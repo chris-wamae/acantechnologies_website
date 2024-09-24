@@ -19,4 +19,5 @@ return cookie.substring(nameLength)
 }
 
 
-cookieSearch("contactType");
+let foundCookie = cookieSearch("contactType");
+console.log(foundCookie)
