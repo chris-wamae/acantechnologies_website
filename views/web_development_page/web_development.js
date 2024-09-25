@@ -23,7 +23,7 @@ apiContactButtton.addEventListener("click", () => {
 
 const applicationContactButtton = document.getElementsByClassName("application_contact_button")[0]
 
-commerceContactButtton.addEventListener("click", () => {
+applicationContactButtton.addEventListener("click", () => {
   changeContactOptionsCookie("WebApp")
 })
 
