@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|c:\\users\\chris\\development\\acantechnologies_website\\back_end\\acantechnologiesbackend\\repository\\idevservicecontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|solutionrelative:repository\\idevservicecontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|c:\\users\\chris\\development\\acantechnologies_website\\back_end\\acantechnologiesbackend\\models\\devservicecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|solutionrelative:models\\devservicecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|c:\\users\\chris\\development\\acantechnologies_website\\back_end\\acantechnologiesbackend\\interfaces\\idevservicecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|solutionrelative:interfaces\\idevservicecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|c:\\users\\chris\\development\\acantechnologies_website\\back_end\\acantechnologiesbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E1C864F-AA6F-4E11-916E-698DD97278E3}|AcanTechnologiesBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IDevServiceContactRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Repository\\IDevServiceContactRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IDevServiceContactRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Repository\\IDevServiceContactRepository.cs",
+              "RelativeToolTip": "Repository\\IDevServiceContactRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:50:19.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDevServiceContact.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Interfaces\\IDevServiceContact.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDevServiceContact.cs",
+              "ToolTip": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Interfaces\\IDevServiceContact.cs",
+              "RelativeToolTip": "Interfaces\\IDevServiceContact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:49:33.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DevServiceContact.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Models\\DevServiceContact.cs",
+              "RelativeDocumentMoniker": "Models\\DevServiceContact.cs",
+              "ToolTip": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Models\\DevServiceContact.cs",
+              "RelativeToolTip": "Models\\DevServiceContact.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:44:52.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\chris\\Development\\acantechnologies_website\\back_end\\AcanTechnologiesBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:40:00.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
