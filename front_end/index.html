@@ -19,16 +19,35 @@
 
     <body>
             <nav>
-                <a href="/" class="logo-link"><div>Acan</div><img title="Acan technologies" alt="acan technologies logo, also a link to the landing page" class="nav_icon" src="./public/acan_logo_filled.png"/></a>
-                <span class="nav-span">Software development services</span>
-                <div>
-                    <a href="/web-development/">Web development</a>
+
+                <div><img title="Acan technologies" alt="acan technologies logo, also a link to the landing page" class="nav_icon" src="./public/acan_logo.png"/></div>
+
+                <div class="navlink">
+                    <div id="nav-services-link">Services offered</div>
+
+                    <div id="nav-servicelist" class="nav_service_submenu_hidden">
+                        <div>Web development</div>
+                        <!-- <div class="inactive">App development</div>
+                        <div class="inactive">Game development</div> -->
+                    </div>
                 </div>
-                <a href="/acan-innovations/">Acan innovations</a>
-                <a  class="contact_link" href="/get-in-touch/">Get in touch</a>
-                <a href="/about-acan/">About Acan</a>
+
+
+
+                <!-- <a href="/acan-innovations/">Acan innovations</a> -->
+                <div class="navlink" href="/get-in-touch/">
+                    
+                    <div id="nav-contact-link">Get in touch</div>
+
+                    <div id="nav-contactlist" class="nav_contact_submenu_hidden">
+                        <div>acantechnologies@outlook.com</div>
+                    </div>
+                </div>
+                <!-- <a href="/about-acan/">About Acan</a> -->
             </nav>
+
             <hr/>
+
             <section class="hero_section">
 
                 <div class="hero_header">
@@ -42,16 +61,29 @@
             </section>
 
             <section class="hero_support_text">
-                Choose Acan for software that is secure, scalable, easily maintainable and highly optimized for maximum performance
+                For software that is secure, scalable, easily maintainable and optimized for maximum performance
             </section>
 
             <section class="landing_buttons_container">
-
-                <button><a href="/services-offered/">Services offered</a></button>
-
-                <button class="contact_button"><a href="/get-in-touch/">Get in touch</a></button>
+                
+                <div>
+                    <button id="landing_service_button"  class="landing_button">Services offered</button>
+                    <div class="landing_service_list">
+                        <div class="landing_option">Web development</div>
+                    </div>
+                </div>
+                
+                <div>
+                
+                    <button id="landing_contact_button" class="landing_button">Get in touch</button>
+                    <div class="landing_contact_list">
+                        <div class="landing_option">acantechnologies@outlook.com</div>
+                    </div>
+                </div>
+                
 
             </section>
+
             <footer>
                 &copy; 2024 Acan Technologies. All rights reserved. <a href="#">Privacy Policy</a> <a href="#">Site Map</a>
             </footer>

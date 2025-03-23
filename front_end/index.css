@@ -4,13 +4,131 @@ margin:0px;
 padding:0px;
 }
 
-.nav_icon
+.nav_service_submenu, .nav_contact_submenu
 {
-width:50px;
+position:absolute;
+z-index:1;
 }
 
-button a 
+.nav_service_submenu div, .nav_contact_submenu div, .landing_option
 {
-text-decoration:none;
+background-color:black;
+color:white;
+margin-top:5px;
+padding:20px;
+}
+
+nav
+{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+width:80%;
+align-items:center;
+font-size:18px;
+}
+
+.nav_icon
+{
+width:100px;
+}
+
+.nav_service_submenu
+{
+display:inline;
+}
+
+.nav_service_submenu_hidden, .nav_contact_submenu_hidden
+{
+display:none;
+}
+
+/* .link_error_active
+{
+border:3px solid red;
+} */
+
+/* .link_error_inactive
+{
+border:0px;
+} */
+
+.toggle_services_btn
+{
+height:100%;
+}
+
+
+#nav-services-link, #nav-contact-link
+{
+margin-top:25px;
+margin-bottom:25px;
+}
+
+.hero_section
+{
+display:flex;
+justify-content:space-around;
+align-items:center;
+width:90%;
+margin:auto;
+margin-top:50px;
+}
+
+.hero_graphic img
+{
+width:600px;
+height:400px;
+object-fit:cover;
+}
+
+.hero_header
+{
+font-size:56px;
+}
+
+.hero_support_text
+{
+margin-top:20px;
+font-size:34px;
+text-align:center;
+color:grey;
+}
+
+.landing_buttons_container
+{
+display:flex;
+justify-content:space-around;
+width:80%;
+margin:auto;
+margin-top:30px;
+margin-bottom:30px;
+}
+
+.landing_button
+{
+height:70px;
+width:300px;
+font-size:24px;
+font-weight:bold;
+border:1px solid black;
+}
+
+#landing_service_button
+{
+color:white;
+background-color:black;
+}
+
+#landing_contact_button
+{
 color:black;
+background-color:white;
+}
+
+.landing_option
+{
+font-size:18px;
+font-weight:bold;
+text-align:center;
 }
