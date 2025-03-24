@@ -33,12 +33,12 @@ font-size:18px;
 width:100px;
 }
 
-.nav_service_submenu
+.visible_submenu
 {
 display:inline;
 }
 
-.nav_service_submenu_hidden, .nav_contact_submenu_hidden
+.hidden_submenu
 {
 display:none;
 }
@@ -59,7 +59,7 @@ height:100%;
 }
 
 
-#nav-services-link, #nav-contact-link
+.nav_services_link, .nav_contact_link
 {
 margin-top:25px;
 margin-bottom:25px;
@@ -108,27 +108,37 @@ margin-bottom:30px;
 .landing_button
 {
 height:70px;
-width:300px;
+width:350px;
 font-size:24px;
 font-weight:bold;
 border:1px solid black;
 }
 
-#landing_service_button
+.landing_service_button
 {
 color:white;
 background-color:black;
 }
 
-#landing_contact_button
+.landing_contact_button
 {
 color:black;
 background-color:white;
 }
 
-.landing_option
+.landing_option, .nav_option
 {
 font-size:18px;
 font-weight:bold;
 text-align:center;
+display:flex;
+justify-content:space-around;
+align-items:center;
 }
+
+
+.nav_option
+{
+height:30px;
+}
+

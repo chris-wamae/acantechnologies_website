@@ -1,79 +1,137 @@
-let navServiceSubmenuInUse = false;
+//hover effect system
 
-let toggleServicesNavLink = document.getElementById("nav-services-link");
+//when certain elements are hovered over, they trigger the display of other element(s)
+//when the mouse leaves the trigger or is not over newly displayed elements the other elements go back to being invisible
+//after a short delay
 
-let navServiceList = document.getElementById("nav-servicelist");
+//all trigger elements have id's with the same text part but different (unique) number parts
+//all elements that are triggered by the same trigger have the same class which has the same number part as their trigger element
 
-toggleServicesNavLink.addEventListener("mouseover", (e) => {
-  navServiceList.setAttribute("class", "nav_service_submenu");
-});
+//when the website loads
+//it runs a loop which finds all the triggers and adds all the logic that allows the hover functionality 
 
-function HideNavServiceSubMenu() {
-  if (!navServiceSubmenuInUse) {
-    navServiceList.setAttribute("class", "nav_service_submenu_hidden");
-  }
+//the required logic is:
+//search functionality for trigger names
+//event listeners 
+//search functionality for elements in activates
+//functionality that changes whether the elements are visible or not
+
+//
+
+// let nonExist = document.getElementById("sbmenu-trig-5")
+// console.log(nonExist)
+
+let searchForTrigger = true;
+let counter = 1;
+
+while(searchForTrigger)
+{
+let trigger = document.getElementById("sbmenu-trig-" + counter)
+
+counter++;
+
+if(trigger == null)
+{
+searchForTrigger = false
+}
+else
+{
+  trigger.addEventListener("mouseover", () => {
+   let elements = document.querySelectorAll("sbmenu-elmt-" + counter)
+
+   console.log(elements)
+
+    elements.forEach(element => {
+      element.setAttribute("class","visible_submenu")
+    });
+  })
 }
 
-toggleServicesNavLink.addEventListener("mouseout", (e) => {
-  setTimeout(HideNavServiceSubMenu, 1000);
-});
+}
 
+// let navServiceSubmenuInUse = false;
 
-navServiceList.addEventListener("mouseover", () => {
-  navServiceSubmenuInUse = true;
-});
+// let toggleServicesNavLink = document.getElementById("nav-services-link");
 
+// let navServiceList = document.getElementById("nav-servicelist");
 
-navServiceList.addEventListener("mouseout", () => {
-  navServiceSubmenuInUse = false;
-  setTimeout(HideNavServiceSubMenu, 1000);
-});
+// toggleServicesNavLink.addEventListener("mouseover", (e) => {
+//   navServiceList.setAttribute("class", "nav_service_submenu");
+// });
 
-// inactiveLinks = document.querySelectorAll(".inactive");
-
-// inactiveLinksLength = inactiveLinks.length;
-
-// for (let x = 0; x < inactiveLinksLength; x++) {
-//   inactiveLinks[x].addEventListener("click", (e) => {
-//     inactiveLinks[x].setAttribute("class", "link_error_active");
-
-//     setTimeout(() => {
-//       inactiveLinks[x].setAttribute("class", "inactive_link_error");
-//     }, 1000);
-//   });
+// function HideNavServiceSubMenu() {
+//   if (!navServiceSubmenuInUse) {
+//     navServiceList.setAttribute("class", "nav_service_submenu_hidden");
+//   }
 // }
 
-let navContactSubMenuInUse = false;
+// toggleServicesNavLink.addEventListener("mouseout", (e) => {
+//   setTimeout(HideNavServiceSubMenu, 1000);
+// });
 
-let toggleContactsNavLink = document.getElementById("nav-contact-link");
 
-let navContactList = document.getElementById("nav-contactlist");
+// navServiceList.addEventListener("mouseover", () => {
+//   navServiceSubmenuInUse = true;
+// });
 
-toggleContactsNavLink.addEventListener("mouseover", (e) => {
-navContactList.setAttribute("class","nav_contact_submenu")
-})
 
-function HideNavContactSubMenu() {
+// navServiceList.addEventListener("mouseout", () => {
+//   navServiceSubmenuInUse = false;
+//   setTimeout(HideNavServiceSubMenu, 1000);
+// });
 
-if(!navContactSubMenuInUse)
-{
-  navContactList.setAttribute("class", "nav_contact_submenu_hidden")
-}
+// // inactiveLinks = document.querySelectorAll(".inactive");
+
+// // inactiveLinksLength = inactiveLinks.length;
+
+// // for (let x = 0; x < inactiveLinksLength; x++) {
+// //   inactiveLinks[x].addEventListener("click", (e) => {
+// //     inactiveLinks[x].setAttribute("class", "link_error_active");
+
+// //     setTimeout(() => {
+// //       inactiveLinks[x].setAttribute("class", "inactive_link_error");
+// //     }, 1000);
+// //   });
+// // }
+
+// let navContactSubMenuInUse = false;
+
+// let toggleContactsNavLink = document.getElementById("nav-contact-link");
+
+// let navContactList = document.getElementById("nav-contactlist");
+
+// toggleContactsNavLink.addEventListener("mouseover", (e) => {
+// navContactList.setAttribute("class","nav_contact_submenu")
+// })
+
+
+
+
+
+// function HideNavContactSubMenu() {
+
+// if(!navContactSubMenuInUse)
+// {
+//   navContactList.setAttribute("class", "nav_contact_submenu_hidden")
+// }
   
-}
+// }
 
-toggleContactsNavLink.addEventListener("mouseout",(e) => {
-  setTimeout(HideNavContactSubMenu,1000)
-})
+// toggleContactsNavLink.addEventListener("mouseout",(e) => {
+//   setTimeout(HideNavContactSubMenu,1000)
+// })
 
-navContactList.addEventListener("mouseover",(e) => {
-  navContactSubMenuInUse = true
-})
+// navContactList.addEventListener("mouseover",(e) => {
+//   navContactSubMenuInUse = true
+// })
 
-navContactList.addEventListener("mouseout",(e) => {
- navContactSubMenuInUse = false
- setTimeout(HideNavContactSubMenu,1000)
-})
+// navContactList.addEventListener("mouseout",(e) => {
+//  navContactSubMenuInUse = false
+//  setTimeout(HideNavContactSubMenu,1000)
+// })
+
+
+
 
 
 
