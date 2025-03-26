@@ -2,15 +2,16 @@
 {
 margin:0px;
 padding:0px;
+font-family:"Poppins", sans-serif;
 }
 
-.nav_service_submenu, .nav_contact_submenu
+.nav_sbmenu,.landing_sbmenu
 {
 position:absolute;
 z-index:1;
 }
 
-.nav_service_submenu div, .nav_contact_submenu div, .landing_option
+.nav_service_submenu div, .nav_contact_submenu div, .landing_option, .nav_option
 {
 background-color:black;
 color:white;
@@ -30,10 +31,11 @@ font-size:18px;
 
 .nav_icon
 {
+margin-left:20px;
 width:100px;
 }
 
-.visible_submenu
+/* .visible_submenu
 {
 display:inline;
 }
@@ -41,7 +43,7 @@ display:inline;
 .hidden_submenu
 {
 display:none;
-}
+} */
 
 /* .link_error_active
 {
@@ -84,13 +86,14 @@ object-fit:cover;
 
 .hero_header
 {
-font-size:56px;
+font-size:48px;
+line-height:90px;
 }
 
 .hero_support_text
 {
 margin-top:20px;
-font-size:34px;
+font-size:32px;
 text-align:center;
 color:grey;
 }
@@ -109,7 +112,7 @@ margin-bottom:30px;
 {
 height:70px;
 width:350px;
-font-size:24px;
+font-size:18px;
 font-weight:bold;
 border:1px solid black;
 }
@@ -128,7 +131,7 @@ background-color:white;
 
 .landing_option, .nav_option
 {
-font-size:18px;
+font-size:16px;
 font-weight:bold;
 text-align:center;
 display:flex;
@@ -136,9 +139,46 @@ justify-content:space-around;
 align-items:center;
 }
 
+.landing_option
+{
+width:310px;
+}
+
+
+.landing_link
+{
+display:flex;
+flex-direction:column;
+}
+
+.landing_sbmenu
+{
+margin-top:70px;
+}
 
 .nav_option
 {
 height:30px;
+}
+
+
+footer
+{
+padding-top:20px;
+height:40px;
+color:white;
+background-color:black;
+text-decoration:none;
+font-size:16px;
+text-align:center;
+}
+
+
+footer a 
+{
+margin-right:10px;
+margin-left:10px;
+text-decoration:none;
+color:white;
 }
 

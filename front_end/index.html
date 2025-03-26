@@ -12,6 +12,9 @@
 
         <link rel="icon" type="image/x-icon" src=""/>
         <link rel="stylesheet" href="./index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <script defer rel="text/javascript" src="./index.js"></script>
 
@@ -23,10 +26,10 @@
 
                 <div><img title="Acan technologies" alt="acan technologies logo, also a link to the landing page" class="nav_icon" src="./public/acan_logo.png"/></div>
 
-                <div class="navlink">
-                    <div id="sbmenu-trig-1" class="nav_services_link">Services offered</div>
+                <div id="sbmenu-trig-1" class="navlink">
+                    <div  class="nav_services_link">Services offered</div>
 
-                    <div id="sbmenu-elmt-1" class="hidden_submenu nav_servicelist">
+                    <div style="display:none;" class="nav_sbmenu sbmenu-elmt-1">
                         <div class="nav_option">Web development</div>
                         <!-- <div class="inactive">App development</div>
                         <div class="inactive">Game development</div> -->
@@ -37,11 +40,11 @@
 
 
                 <!-- <a href="/acan-innovations/">Acan innovations</a> -->
-                <div class="navlink" href="/get-in-touch/">
+                <div  id="sbmenu-trig-2" class="navlink" href="/get-in-touch/">
                     
-                    <div id="sbmenu-trig-2" class="nav_contact_link">Get in touch</div>
+                    <div  class="nav_contact_link">Get in touch</div>
 
-                    <div id="sbmenu-elmt-2" class="hidden_submenu nav-contactlist">
+                    <div style="display:none;" class="nav_sbmenu sbmenu-elmt-2">
 
                         <div class="nav_option">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24"><path fill="#fff" d="M5 17V3h18v14zm-4 4V6.5h2V19h16.5v2zm13-8.725l7-4.85V5l-7 4.85L7 5v2.425z"/></svg>
@@ -51,6 +54,13 @@
                 </div>
                 <!-- <a href="/about-acan/">About Acan</a> -->
             </nav>
+
+<!-- 
+            <div id="hover-expt">
+                 <div>I can be seen</div>
+                <div style="display:none;" id="hidden-elmt">I am hidden</div>
+            </div> -->
+
 
             <hr/>
 
@@ -72,24 +82,23 @@
 
             <section class="landing_buttons_container">
                 
-                <div>
-                    <button id="sb-menu-trig-3" class="landing_button landing_service_button">Services offered</button>
-                    <div id="sb-menu-elmt-3" class="landing_service_list">
+                <div id="sbmenu-trig-3" class="landing_link">
+                    <button class="landing_button landing_service_button">Services offered</button>
+                    <div style="display:none;" class="landing_service_list sbmenu-elmt-3  landing_sbmenu">
                         <div class="landing_option">Web development</div>
                     </div>
                 </div>
                 
-                <div>
+                <div id="sbmenu-trig-4" class="landing_link">
                 
-                    <button id="sb-menu-trig-4" class="landing_button landing_contact_button">Get in touch</button>
-                    <div id="sb-menu-elmt-4" class="landing_contact_list">
+               <button class="landing_button landing_contact_button">Get in touch</button>
+                    <div style="display:none;" class="sbmenu-elmt-4 landing_sbmenu">
                         <div class="landing_option">
                             <div><svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24"><path fill="#fff" d="M5 17V3h18v14zm-4 4V6.5h2V19h16.5v2zm13-8.725l7-4.85V5l-7 4.85L7 5v2.425z"/></svg></div>        
                             <div>acantechnologies@outlook.com</div>
                         </div>
                     </div>
                 </div>
-                
 
             </section>
 

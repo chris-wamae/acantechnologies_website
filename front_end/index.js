@@ -8,11 +8,11 @@
 //all elements that are triggered by the same trigger have the same class which has the same number part as their trigger element
 
 //when the website loads
-//it runs a loop which finds all the triggers and adds all the logic that allows the hover functionality 
+//it runs a loop which finds all the triggers and adds all the logic that allows the hover functionality
 
 //the required logic is:
 //search functionality for trigger names
-//event listeners 
+//event listeners
 //search functionality for elements in activates
 //functionality that changes whether the elements are visible or not
 
@@ -23,31 +23,69 @@
 
 let searchForTrigger = true;
 let counter = 1;
+let hoverTracker = {}
 
-while(searchForTrigger)
-{
-let trigger = document.getElementById("sbmenu-trig-" + counter)
-
-counter++;
-
-if(trigger == null)
-{
-searchForTrigger = false
+function HideElement(elmt) {
+elmt.setAttribute("style", "display:none")
 }
-else
-{
-  trigger.addEventListener("mouseover", () => {
-   let elements = document.querySelectorAll("sbmenu-elmt-" + counter)
 
-   console.log(elements)
+while (searchForTrigger) {
+  let trigger = document.getElementById("sbmenu-trig-" + counter);
 
-    elements.forEach(element => {
-      element.setAttribute("class","visible_submenu")
+  if (trigger == null) {
+    searchForTrigger = false;
+  } else {
+    let query = ".sbmenu-elmt-" + counter;
+    hoverTracker[query] = false;
+    let elements = document.querySelectorAll(query);
+
+    elements.forEach((e) => 
+    {
+    e.addEventListener("mouseover", () => {
+      e.setAttribute("style", "display:inline")
+      console.log(e.getAttribute("class"));
+    })
+    })
+
+
+
+    trigger.addEventListener("mouseover", () => {
+      elements.forEach((element) => {
+        element.setAttribute("style", "display:inline;");
+      });
     });
-  })
+
+
+    trigger.addEventListener("mouseout", () => {
+      elements.forEach((element) => {
+        element.setAttribute("style", "display:none;");
+      })
+    })
+
+    counter++;
+    
+  }
 }
 
-}
+
+let hoverExpt = document.getElementById("hover-expt")
+
+let hiddenElmt = document.getElementById("hidden-elmt")
+
+hoverExpt.addEventListener("mouseover", () => {
+hiddenElmt.setAttribute("style","display:inline;")
+})
+
+hoverExpt.addEventListener("mouseout", () => {
+hiddenElmt.setAttribute("style","display:none;")
+})
+
+
+
+console.log(hoverTracker)
+
+
+
 
 // let navServiceSubmenuInUse = false;
 
@@ -69,11 +107,9 @@ else
 //   setTimeout(HideNavServiceSubMenu, 1000);
 // });
 
-
 // navServiceList.addEventListener("mouseover", () => {
 //   navServiceSubmenuInUse = true;
 // });
-
 
 // navServiceList.addEventListener("mouseout", () => {
 //   navServiceSubmenuInUse = false;
@@ -104,17 +140,13 @@ else
 // navContactList.setAttribute("class","nav_contact_submenu")
 // })
 
-
-
-
-
 // function HideNavContactSubMenu() {
 
 // if(!navContactSubMenuInUse)
 // {
 //   navContactList.setAttribute("class", "nav_contact_submenu_hidden")
 // }
-  
+
 // }
 
 // toggleContactsNavLink.addEventListener("mouseout",(e) => {
@@ -129,11 +161,3 @@ else
 //  navContactSubMenuInUse = false
 //  setTimeout(HideNavContactSubMenu,1000)
 // })
-
-
-
-
-
-
-
-
