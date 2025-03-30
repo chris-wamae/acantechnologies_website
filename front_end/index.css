@@ -182,3 +182,12 @@ text-decoration:none;
 color:white;
 }
 
+.page_1_content
+{
+display:flex;
+}
+
+.page_2_content
+{
+display:none;
+}

@@ -21,71 +21,69 @@
 // let nonExist = document.getElementById("sbmenu-trig-5")
 // console.log(nonExist)
 
-let searchForTrigger = true;
-let counter = 1;
-let hoverTracker = {}
+console.log(screen.width)
 
-function HideElement(elmt) {
-elmt.setAttribute("style", "display:none")
-}
-
-while (searchForTrigger) {
-  let trigger = document.getElementById("sbmenu-trig-" + counter);
-
-  if (trigger == null) {
-    searchForTrigger = false;
-  } else {
-    let query = ".sbmenu-elmt-" + counter;
-    hoverTracker[query] = false;
-    let elements = document.querySelectorAll(query);
-
-    elements.forEach((e) => 
-    {
-    e.addEventListener("mouseover", () => {
-      e.setAttribute("style", "display:inline")
-      console.log(e.getAttribute("class"));
-    })
-    })
-
-
-
-    trigger.addEventListener("mouseover", () => {
-      elements.forEach((element) => {
-        element.setAttribute("style", "display:inline;");
-      });
-    });
-
-
-    trigger.addEventListener("mouseout", () => {
-      elements.forEach((element) => {
-        element.setAttribute("style", "display:none;");
-      })
-    })
-
-    counter++;
-    
+if(screen.width > 500)
+{
+  let searchForTrigger = true;
+  let counter = 1;
+  let hoverTracker = {}
+  
+  function HideElement(elmt) {
+  elmt.setAttribute("style", "display:none")
   }
+  
+  while (searchForTrigger) {
+    let trigger = document.getElementById("sbmenu-trig-" + counter);
+  
+    if (trigger == null) {
+      searchForTrigger = false;
+    } else {
+      let query = ".sbmenu-elmt-" + counter;
+      hoverTracker[query] = false;
+      let elements = document.querySelectorAll(query);
+  
+      elements.forEach((e) => 
+      {
+      e.addEventListener("mouseover", () => {
+        e.setAttribute("style", "display:inline")
+        console.log(e.getAttribute("class"));
+      })
+      })
+  
+  
+  
+      trigger.addEventListener("mouseover", () => {
+        elements.forEach((element) => {
+          element.setAttribute("style", "display:inline;");
+        });
+      });
+  
+  
+      trigger.addEventListener("mouseout", () => {
+        elements.forEach((element) => {
+          element.setAttribute("style", "display:none;");
+        })
+      })
+  
+      counter++;
+      
+    }
+  }
+  
+  
+  let hoverExpt = document.getElementById("hover-expt")
+  
+  let hiddenElmt = document.getElementById("hidden-elmt")
+  
+  hoverExpt.addEventListener("mouseover", () => {
+  hiddenElmt.setAttribute("style","display:inline;")
+  })
+  
+  hoverExpt.addEventListener("mouseout", () => {
+  hiddenElmt.setAttribute("style","display:none;")
+  })
 }
-
-
-let hoverExpt = document.getElementById("hover-expt")
-
-let hiddenElmt = document.getElementById("hidden-elmt")
-
-hoverExpt.addEventListener("mouseover", () => {
-hiddenElmt.setAttribute("style","display:inline;")
-})
-
-hoverExpt.addEventListener("mouseout", () => {
-hiddenElmt.setAttribute("style","display:none;")
-})
-
-
-
-console.log(hoverTracker)
-
-
-
 
 // let navServiceSubmenuInUse = false;
 
