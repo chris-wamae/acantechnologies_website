@@ -91,11 +91,36 @@ display:none;
 
 @media only screen and (max-width:500px)
 {
+
+nav
+{
+width:100%;
+display:flex;
+justify-content:space-between
+}
+
 #burger-menu
 {
-width:150px;
-height:150px;
+width:120px;
+height:60px;
 background-color:black;
+display:flex;
+justify-content:center;
+}
+
+.nav_icon
+{
+width:60px;
+}
+
+.navlink
+{
+display:none;
+}
+
+.hero_graphic
+{
+display:none;
 }
 
 }
