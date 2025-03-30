@@ -5,20 +5,6 @@ padding:0px;
 font-family:"Poppins", sans-serif;
 }
 
-.nav_sbmenu,.landing_sbmenu
-{
-position:absolute;
-z-index:1;
-}
-
-.nav_service_submenu div, .nav_contact_submenu div, .landing_option, .nav_option
-{
-background-color:black;
-color:white;
-margin-top:5px;
-padding:20px;
-}
-
 nav
 {
 display:flex;
@@ -29,73 +15,18 @@ align-items:center;
 font-size:18px;
 }
 
+.nav_service_submenu div, .nav_contact_submenu div, .landing_option, .nav_option
+{
+background-color:black;
+color:white;
+margin-top:5px;
+padding:20px;
+}
+
 .nav_icon
 {
 margin-left:20px;
 width:100px;
-}
-
-/* .visible_submenu
-{
-display:inline;
-}
-
-.hidden_submenu
-{
-display:none;
-} */
-
-/* .link_error_active
-{
-border:3px solid red;
-} */
-
-/* .link_error_inactive
-{
-border:0px;
-} */
-
-.toggle_services_btn
-{
-height:100%;
-}
-
-
-.nav_services_link, .nav_contact_link
-{
-margin-top:25px;
-margin-bottom:25px;
-}
-
-.hero_section
-{
-display:flex;
-justify-content:space-around;
-align-items:center;
-width:90%;
-margin:auto;
-margin-top:50px;
-}
-
-.hero_graphic img
-{
-width:600px;
-height:400px;
-object-fit:cover;
-}
-
-.hero_header
-{
-font-size:48px;
-line-height:90px;
-}
-
-.hero_support_text
-{
-margin-top:20px;
-font-size:32px;
-text-align:center;
-color:grey;
 }
 
 .landing_buttons_container
@@ -106,15 +37,6 @@ width:80%;
 margin:auto;
 margin-top:30px;
 margin-bottom:30px;
-}
-
-.landing_button
-{
-height:70px;
-width:350px;
-font-size:18px;
-font-weight:bold;
-border:1px solid black;
 }
 
 .landing_service_button
@@ -129,38 +51,11 @@ color:black;
 background-color:white;
 }
 
-.landing_option, .nav_option
-{
-font-size:16px;
-font-weight:bold;
-text-align:center;
-display:flex;
-justify-content:space-around;
-align-items:center;
-}
-
-.landing_option
-{
-width:310px;
-}
-
-
 .landing_link
 {
 display:flex;
 flex-direction:column;
 }
-
-.landing_sbmenu
-{
-margin-top:70px;
-}
-
-.nav_option
-{
-height:30px;
-}
-
 
 footer
 {
@@ -191,3 +86,110 @@ display:flex;
 {
 display:none;
 }
+
+/* universal css end */
+
+@media only screen and (max-width:500px)
+{
+#burger-menu
+{
+width:150px;
+height:150px;
+background-color:black;
+}
+
+}
+
+
+@media only screen and (min-width:500px)
+{   
+    .burger-menu
+    {
+    display:none;
+    }
+    .nav_sbmenu,.landing_sbmenu
+    {
+    position:absolute;
+    z-index:1;
+    }
+    
+    .toggle_services_btn
+    {
+    height:100%;
+    }
+    
+    .nav_services_link, .nav_contact_link
+    {
+    margin-top:25px;
+    margin-bottom:25px;
+    }
+    
+    .hero_section
+    {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:90%;
+    margin:auto;
+    margin-top:50px;
+    }
+    
+    .hero_graphic img
+    {
+    width:600px;
+    height:400px;
+    object-fit:cover;
+    }
+    
+    .hero_header
+    {
+    font-size:48px;
+    line-height:90px;
+    }
+    
+    .hero_support_text
+    {
+    margin-top:20px;
+    font-size:32px;
+    text-align:center;
+    color:grey;
+    }
+    
+    .landing_button
+    {
+    height:70px;
+    width:350px;
+    font-size:18px;
+    font-weight:bold;
+    border:1px solid black;
+    }
+    
+    .landing_option, .nav_option
+    {
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    }
+    
+    .landing_option
+    {
+    width:310px;
+    }
+    
+    .landing_sbmenu
+    {
+    margin-top:70px;
+    }
+    
+    .nav_option
+    {
+    height:30px;
+    }
+    
+} 
+    
+
+

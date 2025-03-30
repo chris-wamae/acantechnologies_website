@@ -16,12 +16,10 @@
 //search functionality for elements in activates
 //functionality that changes whether the elements are visible or not
 
-//
-
 // let nonExist = document.getElementById("sbmenu-trig-5")
 // console.log(nonExist)
 
-console.log(screen.width)
+console.log("screen width" + screen.width)
 
 if(screen.width > 500)
 {
@@ -71,18 +69,6 @@ if(screen.width > 500)
     }
   }
   
-  
-  let hoverExpt = document.getElementById("hover-expt")
-  
-  let hiddenElmt = document.getElementById("hidden-elmt")
-  
-  hoverExpt.addEventListener("mouseover", () => {
-  hiddenElmt.setAttribute("style","display:inline;")
-  })
-  
-  hoverExpt.addEventListener("mouseout", () => {
-  hiddenElmt.setAttribute("style","display:none;")
-  })
 }
 
 // let navServiceSubmenuInUse = false;
