@@ -92,6 +92,18 @@ display:none;
 @media only screen and (max-width:500px)
 {
 
+.page_1_content
+{
+flex-direction:column;
+}
+
+.hero_header
+{
+font-size:20px;
+text-align:center;
+width:95%;
+}
+
 nav
 {
 width:100%;
@@ -118,9 +130,39 @@ width:60px;
 display:none;
 }
 
+.hero_graphic img
+{
+width:350px;
+height:200px;
+object-fit:cover;
+}
+
 .hero_graphic
 {
+margin:auto;
+}
+
+.hero_support_text
+{
 display:none;
+}
+
+.landing_buttons_container
+{
+height:150px;
+}
+
+.landing_button
+{
+height:60px;
+font-size:16px;
+font-weight:bold;
+}
+
+footer
+{
+height:25px;
+font-size:8px;
 }
 
 }
