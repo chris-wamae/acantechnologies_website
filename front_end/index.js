@@ -1,14 +1,13 @@
+function HideElement(elmt) {
+  elmt.setAttribute("style", "display:none")
+  }
+
 //desktop js
 
 if(screen.width > 500)
 {
   let searchForTrigger = true;
   let counter = 1;
-  let hoverTracker = {}
-  
-  function HideElement(elmt) {
-  elmt.setAttribute("style", "display:none")
-  }
   
   while (searchForTrigger) {
     let trigger = document.getElementById("sbmenu-trig-" + counter);
@@ -17,16 +16,16 @@ if(screen.width > 500)
       searchForTrigger = false;
     } else {
       let query = ".sbmenu-elmt-" + counter;
-      hoverTracker[query] = false;
+
       let elements = document.querySelectorAll(query);
   
-      elements.forEach((e) => 
-      {
-      e.addEventListener("mouseover", () => {
-        e.setAttribute("style", "display:inline")
-        console.log(e.getAttribute("class"));
-      })
-      })  
+      // elements.forEach((e) => 
+      // {
+      // e.addEventListener("mouseover", () => {
+      //   e.setAttribute("style", "display:inline")
+      //   console.log(e.getAttribute("class"));
+      // })
+      // })  
 
       trigger.addEventListener("mouseover", () => {
         elements.forEach((element) => {
@@ -50,31 +49,101 @@ if(screen.width > 500)
 
 //mobile js
 
-let burgMenuButton = document.getElementById("burger-menu-btn")
+if(screen.width <= 500)
+{ 
 
-let showBurgMenu = false;
+  console.log(screen.width)
 
-let burgerMenu = document.querySelectorAll(".navlink")
+  let burgMenuButton = document.getElementById("burger-menu-btn")
 
-console.log(burgerMenu)
-
-burgMenuButton.addEventListener("click",() => {
+  let showBurgMenu = false;
   
-  showBurgMenu = !showBurgMenu
+  let burgerMenu = document.querySelectorAll(".navlink")
   
-  if(showBurgMenu)
-    {
-      burgerMenu.forEach((e) =>
+  burgMenuButton.addEventListener("click",() => {
+    
+    showBurgMenu = !showBurgMenu
+    
+    if(showBurgMenu)
       {
-      e.setAttribute("style","display:flex;")
-      })
+        burgerMenu.forEach((e) =>
+        {
+        e.setAttribute("style","display:flex;")
+        })
+      }
+    else
+      {
+        burgerMenu.forEach((e) => {
+        e.setAttribute("style","display:none;")
+        })
+      }
+  
+  
+  })
+
+  
+
+  let searchForTrigger = true;
+
+  let counter = 1;
+
+  while(searchForTrigger)
+  {
+    
+    let trigger = document.getElementById("sbmenu-trig-" + counter);
+
+    if (trigger == null) {
+      searchForTrigger = false;
+    } else {
+      let query = ".sbmenu-elmt-" + counter;
+      //hoverTracker[query] = false;
+      let elements = document.querySelectorAll(query);
+  
+      // elements.forEach((e) => 
+      // {
+      // e.addEventListener("click", () => {
+      //   e.setAttribute("style", "display:inline")
+      //   console.log(e.getAttribute("class"));
+      // })
+      // })  
+
+      trigger.addEventListener("click", () => {
+        elements.forEach((element) => {
+
+          let currentStyle =  element.getAttribute("style")
+
+          if(currentStyle == "display:none;")
+          {
+            element.setAttribute("style", "display:inline;");
+          }
+          else
+          {
+            element.setAttribute("style", "display:none;");
+          }
+          
+        });
+      });
+  
+  
+      // trigger.addEventListener("click", () => {
+      //   elements.forEach((element) => {
+      //     element.setAttribute("style", "display:none;");
+      //   })
+      // })
+  
+      counter++;
+      
     }
-  else
-    {
-      burgerMenu.forEach((e) => {
-      e.setAttribute("style","display:none;")
-      })
-    }
+  }
 
 
-})
+
+
+
+}
+
+
+
+
+
+
