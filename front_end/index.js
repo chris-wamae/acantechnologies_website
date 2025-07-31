@@ -51,6 +51,7 @@ if (screen.width > 500) {
 //mobile js
 
 if (screen.width <= 500) {
+  
   let burgMenuButton = document.getElementById("burger-menu-btn");
 
   let showBurgMenu = false;
@@ -99,11 +100,11 @@ if (screen.width <= 500) {
             showBurgMenu = true;
 
             burgerMenu.forEach((e) => {
-              e.setAttribute("style", "display:flex;");
+              e.setAttribute("style", "display:flex;flex-direction:column;");
             });
             window.scrollTo({ top: 0, behavior: "smooth" });
 
-            element.setAttribute("style", "display:inline;");
+            element.setAttribute("style", "display:flex;flex-direction:column;");
           });
         });
       } else {
@@ -111,7 +112,7 @@ if (screen.width <= 500) {
           elements.forEach((element) => {
             let currentStyle = element.getAttribute("style");
             if (currentStyle == "display:none;") {
-              element.setAttribute("style", "display:inline;");
+              element.setAttribute("style", "display:flex;flex-direction:column;");
             } else {
               element.setAttribute("style", "display:none;");
             }

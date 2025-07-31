@@ -5,6 +5,13 @@ padding:0px;
 font-family:"Poppins", sans-serif;
 }
 
+a
+{
+text-decoration:none;
+color:white;
+}
+
+
 nav
 {
 display:flex;
@@ -21,6 +28,11 @@ background-color:black;
 color:white;
 margin-top:5px;
 padding:20px;
+}
+
+.landing_button:hover, .navlink:hover, .nav_service_submenu div:hover, .nav_contact_submenu div:hover, .landing_option:hover, .nav_option:hover
+{
+text-decoration:underline;
 }
 
 .nav_icon
@@ -78,7 +90,7 @@ color:white;
 }
 
 
-/* universal css end */
+/* mobile css */
 
 @media only screen and (max-width:500px)
 {
@@ -194,11 +206,25 @@ padding:0px;
 .navlink
 {
 border-bottom:1px solid white;
-display:none;
+flex-direction:column;
+}
+
+div .nav_option,div .nav_option div
+{
+font-size:12px;
+width:84%;
+}
+
+div.nav_option svg
+{
+width:25px;
+height:20px;
+margin-right:10px;
 }
 
 }
 
+/* desktop css */
 
 @media only screen and (min-width:500px)
 {   
