@@ -77,15 +77,6 @@ text-decoration:none;
 color:white;
 }
 
-.page_1_content
-{
-display:flex;
-}
-
-.page_2_content
-{
-display:none;
-}
 
 /* universal css end */
 
@@ -203,6 +194,7 @@ padding:0px;
 .navlink
 {
 border-bottom:1px solid white;
+display:none;
 }
 
 }
