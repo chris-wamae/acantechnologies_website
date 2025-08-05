@@ -43,6 +43,8 @@ font-weight:bold;
 .card_text
 {
 font-size:24px;
+width:400px;
+margin:auto;
 }
 
 .card_button
