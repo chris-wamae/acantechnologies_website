@@ -58,7 +58,12 @@ if (screen.width <= 500) {
 
   let burgerMenu = document.querySelectorAll(".navlink");
 
+  burgerMenu.forEach((e) => {
+  e.setAttribute("style","display:none;")
+  })
+
   burgMenuButton.addEventListener("click", () => {
+    
     showBurgMenu = !showBurgMenu;
 
     if (showBurgMenu) {
@@ -70,6 +75,7 @@ if (screen.width <= 500) {
         e.setAttribute("style", "display:none;");
       });
     }
+
   });
 
   let searchForTrigger = true;
@@ -94,6 +100,7 @@ if (screen.width <= 500) {
 
       if (counter == 3 || counter == 4) {
         trigger.addEventListener("click", () => {
+
           elements.forEach((element) => {
             let burgerMenu = document.querySelectorAll(".navlink");
 
