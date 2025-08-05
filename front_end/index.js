@@ -2,6 +2,7 @@ function HideElement(elmt) {
   elmt.setAttribute("style", "display:none");
 }
 
+
 //desktop js
 
 if (screen.width > 500) {
